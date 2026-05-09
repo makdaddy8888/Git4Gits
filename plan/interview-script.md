@@ -1,6 +1,8 @@
-# SME discovery interview (~25–30 minutes)
+# SME discovery interview (~25–35 min — use **~35 min** if you run both optional blocks)
 
 Consent: Explain notes may inform program design; anonymize quotes unless they agree otherwise.
+
+**Who “doesn’t know they need structure yet”:** many people feel a **superpower** first; see [`messaging-unaware-learners.md`](messaging-unaware-learners.md) for leader/SME language and outreach hints.
 
 **Industry breadth:** peek at [`domains.md`](domains.md) and borrow example tasks from the closest vertical so questions feel grounded.
 
@@ -20,6 +22,13 @@ Consent: Explain notes may inform program design; anonymize quotes unless they a
 - What tools does IT allow today (Excel, Jupyter, IDE, SaaS connectors)?
 - Any **datasets** that are inherently off limits for pilots?
 - **Cross-border SaaS**: does work data leave that country when you use vendor AI?
+
+## Latent need (optional ~4 min) — “superpower without the grammar”
+
+- After a win with AI, **how do you convince yourself** it’s safe to run again next week?
+- Walk me through **the last time output looked right but was wrong**—how long until you noticed?
+- If a new hire had to **maintain your script**, what would they curse you for skipping?
+- Finish: “Structure feels like _____ to me when I’m coding with AI.” (school / brake / safety belt / bureaucracy / other)
 
 ## Close (5 min)
 

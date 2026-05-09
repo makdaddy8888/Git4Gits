@@ -10,6 +10,10 @@ These are **provisional decisions** chosen so work can begin. Revisit after **We
 
 **Humans in the room:** read [`learner-personas-and-facilitation.md`](learner-personas-and-facilitation.md)—archetypes are **facilitation aids**, not labels; interviews now include optional **participant style** prompts.
 
+**Outreach narrative:** [`messaging-unaware-learners.md`](messaging-unaware-learners.md)—how to meet leaders/SMEs who feel the **superpower** before they see the need for **structure**.
+
+## Decisions locked for v0
+
 | Topic | Decision | Why |
 |-------|----------|-----|
 | **Primary customer** | The **individual SME learner** | Without learner confidence and a first win, nothing else compounds. Managers get a secondary metric (capstone checklist). |

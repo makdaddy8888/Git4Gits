@@ -1,6 +1,6 @@
 # Git4Gits
 
-Education initiative: help **subject matter experts** ship small, verifiable software with **AI coding tools**—without pretending everyone becomes a career engineer. Git4Gits doubles as an **ideas + facilitation backbone**—see [`plan/product-shape.md`](plan/product-shape.md) for platform vs Copilot vs repo-only.
+Education initiative: help **subject matter experts** ship small, verifiable software with **AI coding tools**—without pretending everyone becomes a career engineer. The **thrill** is real superpower; the **moat** is structured habits so it scales. See [`plan/product-shape.md`](plan/product-shape.md) and [`plan/messaging-unaware-learners.md`](plan/messaging-unaware-learners.md).
 
 ## Start here
 
@@ -20,6 +20,7 @@ Education initiative: help **subject matter experts** ship small, verifiable sof
 | `plan/compliance-research-agent.md` | Workflow + prompt spec for jurisdictional desk research (**not legal advice**) |
 | `plan/legal-packs/` | Stored outputs dated by country/industry hypothesis |
 | `plan/learner-personas-and-facilitation.md` | Who shows up / how facilitators scaffold mixed humans |
+| `plan/messaging-unaware-learners.md` | Pitch + signals for SMEs & leaders who don’t know they need structure yet |
 | `plan/ideas/` | Captured improvement ideas (use `_template.md`) |
 | `templates/` | Problem brief, capstone checklist, jurisdiction profile |
 

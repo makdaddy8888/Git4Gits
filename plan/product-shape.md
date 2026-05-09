@@ -4,7 +4,7 @@ When you wonder whether this should be **a platform**, **Copilot-guided**, or **
 
 ## Core job (one sentence)
 
-**Git4Gits helps facilitators capture, refine, and ship ideas that turn SMEs into capable partners in AI-assisted coding**—starting with mindset, workflows, and verification—not only syntax.
+**Git4Gits helps facilitators capture, refine, and ship ideas that turn SMEs into capable partners in AI-assisted coding**—starting with mindset, workflows, and verification—not only syntax. Many targets **do not yet know** they need that structure; meet them at the **superpower** moment and teach the **grammar** that preserves it—see [`messaging-unaware-learners.md`](messaging-unaware-learners.md).
 
 Everything below serves that job.
 
@@ -73,3 +73,4 @@ Git4Gits is a **facilitation system and idea pipeline** that helps organizations
 - Research sources + ranking caveats: [`research-ai-disruption-notes.md`](research-ai-disruption-notes.md)
 - Jurisdiction desk workflow + precedent/law framing: [`compliance-research-agent.md`](compliance-research-agent.md)
 - Learner psychology + facilitation cues: [`learner-personas-and-facilitation.md`](learner-personas-and-facilitation.md)
+- Outreach / “they don’t know they need structure yet”: [`messaging-unaware-learners.md`](messaging-unaware-learners.md)
