@@ -9,6 +9,8 @@
 
 **Output:** completed [`templates/learner-profile-template.md`](../templates/learner-profile-template.md) saved as e.g. `plan/learners/<anonymous-slug>.md` (see [`plan/learners/README.md`](learners/README.md) for PII guardrails).
 
+**Typed alternative:** [`templates/learner-intake-form.md`](../templates/learner-intake-form.md) (Part 1) → [`templates/learner-intake-followup-generator-prompt.md`](../templates/learner-intake-followup-generator-prompt.md) yields Part 2 questions—[`learner-intake-two-phase.md`](learner-intake-two-phase.md).
+
 ---
 
 ## Consent & logistics (3 min)
