@@ -2,7 +2,7 @@
 
 ## Purpose
 
-One Markdown file **per enrolled SME**, produced by [`learner-intake-interview.md`](../learner-intake-interview.md) together with [`../templates/learner-profile-template.md`](../templates/learner-profile-template.md).
+One Markdown file **per enrolled SME**, produced by [`learner-intake-interview.md`](../learner-intake-interview.md) together with [`../templates/learner-profile-template.md`](../templates/learner-profile-template.md). Learners may fill [`../templates/learner-intake-form.md`](../templates/learner-intake-form.md) first; facilitator then maps into the profile template.
 
 Tracks **domain authority**, **industry**, **country / sub-jurisdiction**, and **passion** so capstones and facilitation match the person—not an abstract persona.
 

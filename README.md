@@ -7,7 +7,7 @@ Education initiative: help **subject matter experts** ship small, verifiable sof
 1. Open [`plan/00-start-here.md`](plan/00-start-here.md) for locked-in v0 defaults and this week’s actions (and [`plan/product-shape.md`](plan/product-shape.md) when product scope feels fuzzy).
 2. Scan [`plan/domains.md`](plan/domains.md) plus [`plan/research-ai-disruption-notes.md`](plan/research-ai-disruption-notes.md) when choosing interviews or framing pilots.
 3. If learners sit under **meaningful jurisdiction / sector overlay**, run desk research via [`plan/compliance-research-agent.md`](plan/compliance-research-agent.md); pin results in `plan/legal-packs/` — **not legal advice**; escalate to counsel when red flags appear.
-4. For each enrolled SME before Week 1: **[`plan/learner-intake-interview.md`](plan/learner-intake-interview.md)** → profile in [`plan/learners/README.md`](plan/learners/README.md). Elite roles: **[`plan/conversation-intelligence-prep.md`](plan/conversation-intelligence-prep.md)** + `plan/prep-briefs/`.
+4. For each enrolled SME before Week 1: **`templates/learner-intake-form.md`** (typed async) → [`plan/learner-intake-interview.md`](plan/learner-intake-interview.md) optional live pass → profile in [`plan/learners/README.md`](plan/learners/README.md). Elite roles: **[`plan/conversation-intelligence-prep.md`](plan/conversation-intelligence-prep.md)** + `plan/prep-briefs/`.
 5. Run the **Week 1 checklist** in the same folder.
 6. Use [`templates/problem-brief-template.md`](templates/problem-brief-template.md) before any codegen in teaching or pilot sessions.
 
