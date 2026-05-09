@@ -1,0 +1,84 @@
+
+
+                            .--------.
+                           /.........\
+                          /............\
+                         /:::::::::::::\
+                         |::::::::::::::|
+                .--------:::::::::::::::--------.
+               /::::::::::::::::::::::::::::::::::\
+              /............::::::::::::::::........\
+             |............|::::::::::::::::|............|
+             |............|::::::::::::::::|............|
+             |............|::::::::::::::::|............|
+             |............::::::::::::::::............|
+             |............----------------............|
+             |............   W E L C O M E    ............|
+              \............::::::::::::::::............/
+               \............----------------........../
+                '---------::::::::::::::::::::::::---'
+                           |_______________|
+
+
+==============================================================================
+
+                         G i t 4 G i t s
+               * Structured Gen-AI Coding Academy *
+                         NODE ID: ALPHA-001
+                    "Brief first. VERIFY always."
+
+==============================================================================
+
+ CONNECTED VIA ..... SECURE MATRIX (HTTPS/TLS META-LAYER SIMULATED AT 9600 )
+ LOCAL ECHO ..... ON          WRAP ..... 80 COLS           ANSI ..... OFF    
+ SESSION UUID ..... [ GENERATE_ON_BOOT ]                    BUILD ..... 0001   
+
+------------------------------------------------------------------------------
+
+  Today's bulletins                                                READ [B]
+
+  (->) #01 --- Platform manifesto: rubric-first SME training
+  (->) #02 --- Capstone checklist is law; facilitator is judiciary
+  (->) #03 --- Jurisdiction packs: paste nothing illegal, friend
+
+------------------------------------------------------------------------------
+
+  FILES AVAILABLE [F]
+
+        LEARNER-INTAKE-FORM.TXT    CAPSTONE-CHKLST.TXT
+        IDEA-PORTFOLIO.TXT         LEGALPACKS/README
+
+------------------------------------------------------------------------------
+
+  MAIN MENU
+
+    [ 1 ]  New learner ................. INTAKE SEQUENCE (nickname + persona)
+    [ 2 ]  Returning ................... RESUME PROGRESS / SUBMIT ARTIFACT
+    [ 3 ]  Leaderboards / squads ........ OPT-IN VERIFY SCOREBOARD (SAFE MODE)
+    [ 4 ]  Idea portfolio wizard ....... 1 SMALL + N MEDIUM + 1 LARGE PLAN
+    [ 5 ]  Sysop mail .................. facilitator / mentor channel
+    [ 6 ]  Logoff & save disk .......... EXIT WITHOUT LOSING PROGRESS.DAT
+
+    ENTER CHOICE (1-6), OR '?' FOR HELP, OR '#' FOR CREDITS
+
+------------------------------------------------------------------------------
+
+   _________________________________________________
+  /                                                  \
+ |  HELP: Pick [1]. Choose a PLAY PERSONA guild tag |
+ |        ( Cartographer Sentinel Forge Archivist ... )|
+ |        Your NICK appears on OPTIONAL boards only.|
+  \__________________________________________________/
+
+        \                     ^^^^^
+         \___________uu____/^   ^
+                      |        @ @
+                       \      (_)
+                        |       |
+                        _________/
+
+==============================================================================
+
+ "...the scroll is dusty but the toolchain is ruthless." — SYSOP GIT4GITS
+
+==============================================================================
