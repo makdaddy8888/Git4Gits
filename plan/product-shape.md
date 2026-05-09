@@ -1,73 +1,77 @@
 # Product shape — Git4Gits (how the pieces relate)
 
-When you wonder whether this should be **a platform**, **Copilot-guided**, or **just an ideas catcher**, treat those as **layers in time**, not three unrelated products.
+**Decision:** Git4Gits **is** a **learning platform** product—purpose-built for SMEs mastering **structured AI-assisted coding**, not generic LMS shelfware.
+
+This repo carries **definitions, curricula, workflows, personas, jurisdictional scaffolding, intelligence design, and UX strategy** → see **[`platform-product-vision.md`](platform-product-vision.md)**. Application implementations can live under [`apps/README.md`](../apps/README.md) or a sibling service repo.
+
+Historical elements below—**ideas catcher**, **Copilot variants**, Markdown-first authoring—remain **capabilities inside** that platform vision, delivered in phased releases—not “defer platform forever.”
 
 ## Core job (one sentence)
 
-**Git4Gits helps facilitators capture, refine, and ship ideas that turn SMEs into capable partners in AI-assisted coding**—starting with mindset, workflows, and verification—not only syntax. Many targets **do not yet know** they need that structure; meet them at the **superpower** moment and teach the **grammar** that preserves it—see [`messaging-unaware-learners.md`](messaging-unaware-learners.md).
+**Git4Gits is a learning platform that helps subject-matter experts build rigor with AI-assisted coding**—verification, briefing, jurisdictional realism, respectful intake—many targets **meet the superpower first** before they see structure; UX and pedagogy honour both—[`messaging-unaware-learners.md`](messaging-unaware-learners.md).
 
-Everything below serves that job.
+## What ships together
 
-## What you described — mapped
+| Capability | Role |
+|------------|------|
+| **Platform shell** | Auth, enrolment, modules/path, artefacts, submissions, rubric-backed scoring (MVP)—[`platform-product-vision.md`](platform-product-vision.md) |
+| **Curriculum backbone** | This repo (`templates/`, cohort runbooks)—optionally synced or rendered inside the app |
+| **Intelligence wedge** | Intake tailoring, elite prep packs, lawful desk research scaffolding—[`intelligence-system-design.md`](intelligence-system-design.md) |
+| **GitHub Copilot / tool tracks** | Configurable modality—same pedagogical skeleton |
+| **Facilitator ergonomics** | Live remains central early; tooling catches grading + insight |
 
-| Idea | Role in Git4Gits |
-|------|------------------|
-| **Facilitation** | Humans run cohorts/session 01; templates encode *how* to teach. |
-| **Capturing ideas** | Repo + structured docs (patterns, pitfalls, curricula fragments) become the living backlog—**ideas catcher** first. |
-| **Self-guided + GitHub Copilot** | Optional **Copilot lab track**: same workflows, toolchain pinned to GH Copilot (when org-standard). |
-| **Platform** | **Later**: only if URL login, cohort management, telemetry, marketplace of modules, etc. outperform a repo + LMS you already pay for. |
-
-## Recommended ladder (lowest risk → scale)
+## Phased roadmap (risk-aware, inside one platform bet)
 
 ```
-1. Ideas + facilitation kit (this repo) ← you are here
-2. Add curated “patterns” library (markdown + examples)
-3. Add optional Copilot-specific exercises / checklist overlays
-4. Platform only after repeat buyers + repeatable ops pain
+1. Spec + runway content in Git (today) ─── proves pedagogy you’ll encode into product
+2. MVP web product: learners complete path + evidences → rubric ─── repeatable without hero facilitators drowning
+3. Intelligence features (prep brief QA, versioning, richer analytics)
+4. Enterprise hardening (SSO, attestations, data residency stance)
 ```
 
-**Rule of thumb:** If it fits in Markdown, a spreadsheet of learners, and a calendar invite, **do not build a platform yet**.
+**Rule:** still **borrow** undifferentiated stack (managed auth, infra, transactional email)—build where **pedagogy & SME calibration** shines.
 
-## What “ideas catcher” concretely means here
+## What “ideas catcher” still means (inside platform)
 
-Use the repo so ideas are **actionable**:
+Operational discipline while designing:
 
-- **`plan/notes/`** — raw session/brainstorm logs (messy OK).
-- **New files under `plan/ideas/`** — one idea per file: problem, audience, proposed exercise, status (spike / pilot / adopted).
-- **`templates/`** — only promote ideas that passed a **pilot** (otherwise template sprawl kills learners).
+- **`plan/notes/`** — exploratory logs  
+- **`plan/ideas/`** — promote only pilot-proven drills into curriculum tickets  
+- **PRs against `templates/`** — versioning pedagogy moves before UX surfaces them  
 
 ## Copilot vs tool-agnostic
 
 | Stance | When |
 |--------|------|
-| **Tool-agnostic** (default) | Unknown org stack; teach verification and handoffs. |
-| **Copilot track** | Org has **GitHub Copilot** licensed and approved; you want sharper UI-level exercises. |
+| **Tool-agnostic baseline** | Default learning outcomes |
+| **Copilot track overlays** | Enterprise buyers standardise on GH Copilot—toggle in LMS |
 
-Copilot-specific content **adds variants** (“Try in VS Code Copilot Chat…”), not a separate philosophy.
+Add variants in content model, **not duplicate ontologies.**
 
-## Decision trigger: build a real platform?
+## Decision trigger (legacy table — repurposed)
 
-Consider a web app **only if** ≥3 recur:
+The **pressure** checklist below now scopes **priorities**, not whether to ship a platform—we already shipped that decision:
 
-| Signal | Builds pressure for platform |
-|--------|-------------------------------|
-| Cohort scheduling / payments | Coordinators drowning |
-| SSO + compliance attestations | Enterprise procurement blocks repo-only |
-| Rich analytics dashboard | Sponsor demands granular proof |
-| Versioned curricula at scale | Editors need branching/roles beyond Git |
-
-Otherwise: repo + facilitator + periodic export to PDF/slides beats maintenance cost.
+| Signal | Product response |
+|--------|------------------|
+| Cohort churn / ops pain | Enrol automation, reminders inside MVP |
+| Enterprise procurement blocks | SSO, audit exports backlog |
+| Proof demands | Transparent rubrics + facilitator dashboard analytics |
+| Curriculum editors > Git comfort | In-app CMS or MDX pipeline later |
 
 ## One-line product vision (paste into charter)
 
-Git4Gits is a **facilitation system and idea pipeline** that helps organizations grow **subject-matter experts who code with AI**—starting with captures and pilots, optionally specializing for **GitHub Copilot**, and evolving to heavier tooling only when operations prove it.
+Git4Gits is a **learning platform** that helps organizations grow **verification-first SME mastery of AI-assisted coding**, with jurisdictional seriousness, transparent rubrics, and optional deep integration paths like **GitHub Copilot**.
 
 ## Next edits you might make
 
-- In [`charter-v0.md`](charter-v0.md): set **primary outcome** = “ideas captured → piloted exercises → repeatable cohort.”
-- Add your first loose idea file: `plan/ideas/example-meaningful-name.md` (copy a heading structure from a note in `plan/notes/`).
+- In [`charter-v0.md`](charter-v0.md): outcome = **MVP platform scope** (modules + rubric) or pilot bridge if pre-product.
+- Scaffold first app slice under [`apps/README.md`](../apps/README.md) when engineering starts.
+- Add your first loose idea file: `plan/ideas/example-meaningful-name.md`.
 
 ## Related repo docs
+
+- Learning **platform** vision (MVP capabilities, users, non-goals): [`platform-product-vision.md`](platform-product-vision.md)
 
 - Vertical coverage + fit stars: [`domains.md`](domains.md)
 - Research sources + ranking caveats: [`research-ai-disruption-notes.md`](research-ai-disruption-notes.md)

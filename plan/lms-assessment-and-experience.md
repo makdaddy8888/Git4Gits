@@ -1,4 +1,6 @@
-# LMS, learner experience & scoring — strategy (Git4Gits)
+# LMS, learner experience & scoring — strategy (Git4Gits learning platform)
+
+Git4Gits **is** building a **learning platform** (see [`platform-product-vision.md`](platform-product-vision.md)). Pedagogy, rubrics, visual impact, and assessment design **are product features**, not a markdown side project.
 
 ## Goals (tension to manage)
 
@@ -7,22 +9,27 @@
 | **Visually impactful** — feels premium, not “wiki homework” | **Pedagogically sound** — clarity, practice, feedback, authentic tasks |
 | **Observable scoring** — sponsors trust outcomes | **Low shame** — avoid surveillance vibes and leaderboard harm |
 
-Git4Gits should **compose** those with **thin custom UI** where it matters (capstone showcase, rubric transparency), not boil the ocean on LMS features.
+Git4Gits should **ship** these as **product surfaces** (learner app, facilitator console), not only PDFs—while **renting** commodity infrastructure (auth, email, video, DB).
 
 ---
 
-## Do we build an LMS from scratch?
+## What to build vs rent (platform thesis)
 
-**Default: no.**
+| Layer | Build bespoke? | Notes |
+|-------|------------------|-------|
+| **Learner + facilitator UX** for SME / AI-coding pedagogy | **Yes** | Differentiation + visual impact |
+| **Rubric + evidence pipeline** | **Yes** | Mirror [`capstone-checklist.md`](../templates/capstone-checklist.md) |
+| **Intake → tailored path** | **Yes** | [`learner-intake-two-phase.md`](learner-intake-two-phase.md) |
+| **Auth / billing / email / raw video** | **Rent** | Clerk, WorkOS, Stripe, Resend, Mux, etc. |
+| **White-label generic SCORM** | **Defer** | Add when enterprise procurement requires export |
 
-A real LMS is **auth, enrolment, progress, assessments, reporting, accessibility, locales, integrations, uptime, SOC2 spiral** — a product company, not a curriculum sidecar. Only build bespoke if:
-
-- LMS **is** the commercial product thesis, **and**
-- You have **multi-year** eng + design + compliance capacity.
-
-For Git4Gits today, **scratch LMS = distraction** from proving cohort outcomes and content.
+You are **not** obliged to implement low-level protocols—**you are** obliged to own pedagogy, trust, and calibration UX.
 
 ---
+
+## ~~Self-hosted generic LMS?~~ Integrations instead
+
+If a buyer already has **their** LMS, ship **SCORM/xAPI exports** or **deep links** from that vision doc backlog—**primary** experience remains Git4Gits for the learning loop you care about.
 
 ## Recommended architecture: **content spine + thin experience layer + assessment engine (rubric)**
 
@@ -49,26 +56,20 @@ For Git4Gits today, **scratch LMS = distraction** from proving cohort outcomes a
 └───────────────┘                    └────────────────────┘
 ```
 
-**Visual impact** lives in the **top layer** (design system for decks + handouts + optional marketing site), not inside database-driven courseware on day one.
+**Visual impact** ships as **product UI** (design system, motion, typography) and optional **marketing site**; authored modules can be **Git-synced Markdown/MDX** rendered in-app.
 
 ---
 
-## Picking an existing framework / platform (when you need “LMS-like”)
-
-Choose **one primary bucket** by buyer:
+## Picking an existing framework / platform (integrations & accelerators)
 
 | Situation | Direction | Why |
 |-----------|-----------|-----|
-| **Enterprise sells to learning org** | **Their** LMS (SuccessFactors, Workday Learning, Cornerstone, Docebo, etc.) — export **SCORM/xAPI** packages or link out | Procurement already decided |
-| **SMB / mid-market pilot** | **TalentLMS**, **Thrive**, **Moodle** (hosted), **360Learning** (collab tilt) | Fast start, decent branding |
-| **Founder-led / community** | **Circle**, **Mighty**, **Skool**-class + repo link | Social + simple modules; weak on deep rubrics — pair with external rubric |
-| **Open + control** | **Moodle** or **Open edX** (heavy) | Engineering tax |
+| **Git4Gits as primary product** | **Custom app** + managed services (see [`platform-product-vision.md`](platform-product-vision.md)) | Pedagogy is the IP |
+| **Enterprise buyer mandates their LMS** | **SCORM/xAPI package** or LTI-style handoff | Procurement |
+| **Need fast operational stopgap pre-MVP** | Temporary **TalentLMS / Moodle** for scheduling | Throwaway or sync only |
+| **Community beta** | Lightweight social layer + manual rubric | Speed |
 
-**Git4Gits-specific fit:** your **differentiator** is **methods + rubrics + facilitator skill** — the LMS is **plumbing** for enrolment, reminders, optional quizzes, and SCORM export.
-
-**Rule:** If a platform **cannot** show learners the **full rubric before** the task, keep summative scoring **outside** it (Google Sheet with version control, or Notion database) until you switch tools.
-
----
+**Rule:** In-product, learners must see the **full rubric before** summative work. If an external LMS can’t, keep authoritative scoring in Git4Gits and **sync** a summary grade only.
 
 ## Educational best practices (what “good” looks like)
 
@@ -107,32 +108,35 @@ WCAG-minded handouts, captions on async video, time-zone explicit scheduling—L
 
 ---
 
-## Making it “visually impactful” without a custom LMS
+## Visual impact (inside Git4Gits the platform)
 
-1. **One design system** for participant-facing assets: color, type, cover page, section dividers—reuse every cohort.  
-2. **Hero module** artefact per cohort (one polished diagram of **brief → verify** loop).  
-3. Optional **static site** (Astro/Vite + MDX rendering your `plan/` excerpts) as **marketing + syllabus** — auth-free v1.  
-4. **Capstone demo format** templated (title slide, constraints, acceptance tests, demo, risks)—reads “executive” even if codebase is tiny.
+1. **Design system tokens** embedded learner & facilitator apps—not decks bolted on later only  
+2. **Hero onboarding artefact**: singular polished explanation brief→verify loop  
+3. Optional **marketing/syllabus shell** sharing same tokens (MDX/Git sync optional)  
+4. **Capstone review layout** optimised for evidence + skim (executive trust)
 
 ---
 
-## Phased roadmap (honest sequencing)
+## Phased roadmap (platform build)
 
 | Phase | Experience | Assessment | Platforms |
-|-------|-------------|------------|-----------|
-| **Now–pilot v1** | Live + Slack/Teams + designed PDF/deck template | Markdown rubric + facilitator sign-off | None or **TalentLMS free tier** for reminders |
-| **v2 repeat buyers** | Branded learner portal (**static site** or **SMB LMS**) | Rubric CSV export + xAPI someday | Pick **one** SMB LMS or customer-mandated |
-| **Scale** | Integrate enrolment API | LRS-lite for completion events | Negotiate SCORM packaging |
+|-------|------------|------------|-----------|
+| **Seed (now)** | Markdown runbooks / pilot facilitation | Repo rubrics | Proves pedagogy (`plan/`, `templates/`) |
+| **MVP** | Auth enrolment learner path artefacts upload | Interactive capstone checklist UI | bespoke web app + SaaS infra |
+| **V1 intelligence** | Prep-brief flows elite tier | analytics privacy-first | services per [`intelligence-system-design.md`](intelligence-system-design.md) |
+| **Enterprise** | SSO residency audit export | advanced reporting | SCORM/xAPI optional |
 
 ---
 
 ## Decision summary
 
-- **Scratch LMS:** only if LMS is your core VC-scale bet.  
-- **Best default for Git4Gits:** **Git repo + facilitation + branded assets + rigorous rubrics** → **borrow** LMS features from an existing vendor when enrolment/reporting pain exceeds ~2 hours/week of manual ops.
+- **Product = learning platform** → **own** pedagogy UX + rubric engine; **rent** auth/payments/video plumbing.  
+- **Curriculum** can stay **Git-first** (PR-reviewable), rendered into the app.  
+- **External LMS** = integration path, not home base, unless buyer contractually forces it.
 
 ## Related artefacts
 
+- Platform vision: [`platform-product-vision.md`](platform-product-vision.md)  
 - Capstone scoring: [`../templates/capstone-checklist.md`](../templates/capstone-checklist.md)  
 - Intake → personalization: [`learner-intake-two-phase.md`](learner-intake-two-phase.md), [`learner-profile-template.md`](../templates/learner-profile-template.md)  
 - Personas / stress personas: [`personas/README.md`](personas/README.md)
