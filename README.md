@@ -30,6 +30,7 @@ Education initiative: help **subject matter experts** ship small, verifiable sof
 | `templates/learner-intake-form.md` | Type‑in Part 1 intake; Part 2 via follow‑up prompt |
 | `plan/learner-intake-two-phase.md` | Why tailored questions come *after* expertise self‑report |
 | `plan/personas/` | Fictional SMEs for demos ([`plan/personas/README.md`](plan/personas/README.md)) |
+| `plan/lms-assessment-and-experience.md` | LMS build vs buy, visuals, rubrics, scoring best practices |
 | `templates/` | Problem brief, capstone checklist, jurisdiction profile, learner profile, facilitator prep brief |
 
 ## License
