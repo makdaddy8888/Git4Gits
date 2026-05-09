@@ -1,0 +1,14 @@
+{
+  "name": "git4gits-web-preview",
+  "private": true,
+  "version": "0.1.0",
+  "description": "CRT-style browser preview for Git4Gits BBS welcome",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "preview": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

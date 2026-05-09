@@ -18,7 +18,7 @@ The **thrill** is superpower-first learning; the **moat** is verification habits
 
 | Path | Purpose |
 |------|---------|
-| `apps/` | App shell placeholder — [**`welcome-bbs.txt`**](apps/welcome-bbs.txt) ASCII splash + [`apps/README.md`](apps/README.md) |
+| `apps/web/` | **Browser preview** → `cd apps/web && npm start` → http://localhost:3847 — [`apps/web/README.md`](apps/web/README.md) |
 | `plan/platform-product-vision.md` | Learning platform MVP → enterprise capabilities |
 | `plan/` | Decisions, checklists, scripts for discovery and pilot |
 | `plan/domains.md` | All target verticals: tasks, ethics, Git4Gits fit |

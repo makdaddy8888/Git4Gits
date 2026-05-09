@@ -8,5 +8,14 @@ Retro terminal splash for demos or first paint in the app shell:
 
 - [`welcome-bbs.txt`](welcome-bbs.txt) — `cat welcome-bbs.txt` in a monospace terminal (80 cols ideal).
 
-Nothing else bootstrapped yet—this README reserves the convention for future `web/`, `api/`, etc.
+## Browser preview (Node, zero dependencies)
+
+```bash
+cd apps/web && npm start
+# http://localhost:3847
+```
+
+Details: [`web/README.md`](web/README.md).
+
+Future `api/` or monorepo packages can live alongside `web/`.
 

@@ -1,0 +1,194 @@
+/* CRT terminal aesthetic — phosphorus green default */
+:root {
+  --phosphor: #39ff39;
+  --phosphor-dim: #1a6b1a;
+  --glass: rgba(57, 255, 57, 0.04);
+  --bg-crt: #070707;
+}
+
+body.theme-amber {
+  --phosphor: #ffb000;
+  --phosphor-dim: #7a4700;
+  --glass: rgba(255, 176, 0, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: radial-gradient(ellipse at center, #121212 0%, #050505 70%);
+}
+
+body {
+  font-family:
+    ui-monospace,
+    "Cascadia Code",
+    "Consolas",
+    "IBM Plex Mono",
+    Menlo,
+    monospace;
+  color: var(--phosphor);
+}
+
+.bezel {
+  max-width: 92ch;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2rem;
+}
+
+.crt {
+  position: relative;
+  border: 3px solid #2a2a2a;
+  border-radius: 6px;
+  padding: 0.5rem;
+  box-shadow:
+    0 0 0 1px #444,
+    0 8px 32px rgba(0, 0, 0, 0.7),
+    inset 0 0 80px var(--glass);
+  background: var(--bg-crt);
+}
+
+.crt-glow {
+  pointer-events: none;
+  position: absolute;
+  inset: 6px;
+  border-radius: 3px;
+  box-shadow:
+    inset 0 0 40px rgba(57, 255, 57, 0.04),
+    inset 0 0 120px rgba(0, 0, 0, 0.5);
+}
+
+body.theme-amber .crt-glow {
+  box-shadow:
+    inset 0 0 40px rgba(255, 176, 0, 0.06),
+    inset 0 0 120px rgba(0, 0, 0, 0.5);
+}
+
+.crt-scanlines::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    transparent 0 2px,
+    rgba(0, 0, 0, 0.36) 2px 3px
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+body.no-scan .crt-scanlines::before {
+  display: none;
+}
+
+.crt-scanlines {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  border-radius: 3px;
+}
+
+.status-bar {
+  position: relative;
+  z-index: 3;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.75rem;
+  border-bottom: 1px dashed var(--phosphor-dim);
+  color: var(--phosphor);
+  text-shadow:
+    0 0 4px var(--phosphor),
+    0 0 14px rgba(57, 255, 57, 0.15);
+}
+
+body.theme-amber .status-bar {
+  text-shadow:
+    0 0 4px var(--phosphor),
+    0 0 14px rgba(255, 176, 0, 0.2);
+}
+
+.blink {
+  animation: blink 1.05s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.mono-dim {
+  color: var(--phosphor-dim);
+}
+
+main {
+  position: relative;
+  z-index: 3;
+  padding: 0.5rem 0.65rem 0.75rem;
+  overflow-x: auto;
+}
+
+#bbs {
+  margin: 0;
+  white-space: pre;
+  font-size: clamp(11px, 1.85vw, 13px);
+  line-height: 1.33;
+  color: var(--phosphor);
+  text-shadow:
+    0 0 5px rgba(57, 255, 57, 0.45),
+    0 0 16px rgba(57, 255, 57, 0.12);
+  letter-spacing: 0.015em;
+}
+
+body.theme-amber #bbs {
+  text-shadow:
+    0 0 5px rgba(255, 176, 0, 0.5),
+    0 0 16px rgba(255, 176, 0, 0.15);
+}
+
+.hud {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem 0.65rem;
+  border-top: 1px dashed var(--phosphor-dim);
+}
+
+.hud-btn {
+  font: inherit;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.35rem 0.65rem;
+  background: transparent;
+  color: var(--phosphor-dim);
+  border: 1px solid var(--phosphor-dim);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.hud-btn:hover {
+  color: var(--phosphor);
+  border-color: var(--phosphor);
+  box-shadow:
+    0 0 6px rgba(57, 255, 57, 0.25),
+    inset 0 0 8px rgba(57, 255, 57, 0.05);
+}
+
+body.theme-amber .hud-btn:hover {
+  box-shadow:
+    0 0 6px rgba(255, 176, 0, 0.3),
+    inset 0 0 8px rgba(255, 176, 0, 0.06);
+}
+
+.hud-btn:focus-visible {
+  outline: 2px solid var(--phosphor);
+  outline-offset: 2px;
+}

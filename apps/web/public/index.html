@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Git4Gits // BBS preview</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="bezel">
+    <div class="crt">
+      <div class="crt-glow"></div>
+      <div class="crt-scanlines" aria-hidden="true"></div>
+      <header class="status-bar">
+        <span class="blink">*</span> NODE ONLINE
+        <span class="mono-dim">|</span> BUILD 0001
+        <span class="mono-dim">|</span> <span id="clock">--:--:--</span>
+      </header>
+      <main>
+        <pre id="bbs" aria-label="BBS welcome screen">Loading MATRIX...</pre>
+      </main>
+      <footer class="hud">
+        <button type="button" id="toggle-phosphor" class="hud-btn">toggle P31 / amber</button>
+        <button type="button" id="toggle-scan" class="hud-btn">toggle scanlines</button>
+      </footer>
+    </div>
+  </div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
