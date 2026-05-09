@@ -4,6 +4,8 @@ Git4Gits participants are adults with **authority in their domain** and **mixed 
 
 Interpret “manage humans” here as **facilitate responsibly**: clarify norms, pace cognitive load, protect psychological safety, and route people to mentors—**not** surveillance, coercion, or treating humans as homogeneous “users.”
 
+**Learning platform note:** learners may pick an optional **play persona** (guild role) for UX—see [`gamification-rewards-and-identity.md`](gamification-rewards-and-identity.md)—which is **not** the same as the **facilitation archetypes** below (private observational lens for staff).
+
 ## Principles (non‑optional)
 
 | Principle | Operational meaning |

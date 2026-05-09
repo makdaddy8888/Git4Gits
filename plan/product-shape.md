@@ -72,7 +72,6 @@ Git4Gits is a **learning platform** that helps organizations grow **verification
 ## Related repo docs
 
 - Learning **platform** vision (MVP capabilities, users, non-goals): [`platform-product-vision.md`](platform-product-vision.md)
-
 - Vertical coverage + fit stars: [`domains.md`](domains.md)
 - Research sources + ranking caveats: [`research-ai-disruption-notes.md`](research-ai-disruption-notes.md)
 - Jurisdiction desk workflow + precedent/law framing: [`compliance-research-agent.md`](compliance-research-agent.md)
@@ -80,4 +79,5 @@ Git4Gits is a **learning platform** that helps organizations grow **verification
 - Per-learner 1:1 (domain, industry, country, passion): [`learner-intake-interview.md`](learner-intake-interview.md)
 - High-stakes conversational prep (agents → brief → sharp questions): [`conversation-intelligence-prep.md`](conversation-intelligence-prep.md)
 - Finding + building **intelligence** over time (pipeline, stores, roadmap): [`intelligence-system-design.md`](intelligence-system-design.md)
-- LMS vs buy, learner UX, rubrics & scoring: [`lms-assessment-and-experience.md`](lms-assessment-and-experience.md)
+- LMS learner UX, rubrics & scoring: [`lms-assessment-and-experience.md`](lms-assessment-and-experience.md)
+- Gamification + idea portfolio: [`gamification-rewards-and-identity.md`](gamification-rewards-and-identity.md), [`idea-portfolio-ladder.md`](idea-portfolio-ladder.md)

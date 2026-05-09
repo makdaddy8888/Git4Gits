@@ -1,6 +1,6 @@
 # Synthetic learner personas (`plan/personas/`)
 
-These people **do not exist**. Use them for **design reviews**, **dry-run facilitation**, filling `learner-intake-form.md`, or **testing** “elite vs standard” paths.
+Synthetic **test doubles** for facilitation dry-runs—not learner “play personas.” Player-facing guild roles live in [`gamification-rewards-and-identity.md`](../gamification-rewards-and-identity.md).
 
 ## How to “randomise”
 

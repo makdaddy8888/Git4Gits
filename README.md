@@ -35,7 +35,10 @@ The **thrill** is superpower-first learning; the **moat** is verification habits
 | `templates/learner-intake-form.md` | Type‑in Part 1 intake; Part 2 via follow‑up prompt |
 | `plan/learner-intake-two-phase.md` | Why tailored questions come *after* expertise self‑report |
 | `plan/personas/` | Fictional SMEs for demos ([`plan/personas/README.md`](plan/personas/README.md)) |
-| `plan/lms-assessment-and-experience.md` | Pedagogy, scoring, visuals inside the learning platform |
+| `plan/gamification-rewards-and-identity.md` | Nickname, play personas, badges, safe leaderboards, squads |
+| `plan/idea-portfolio-ladder.md` | After training: 1 small · several medium · 1 large + budgets |
+| `templates/learner-display-identity.md` | Nickname & play persona fields for the app |
+| `templates/idea-portfolio-template.md` | Worksheet for portfolio + effort / token allocation |
 | `templates/` | Problem brief, capstone checklist, jurisdiction profile, learner profile, facilitator prep brief |
 
 ## License

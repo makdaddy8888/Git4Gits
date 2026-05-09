@@ -23,7 +23,9 @@ Experts feel a **coding-AI superpower** early; without **structure, jurisdiction
 2. **Jurisdiction- and sector-aware overlays** ([`compliance-research-agent.md`](compliance-research-agent.md); packs in [`legal-packs/`](legal-packs/)).  
 3. **Rubric-first assessment** ([`templates/capstone-checklist.md`](../templates/capstone-checklist.md); transparent formative gates). See [`lms-assessment-and-experience.md`](lms-assessment-and-experience.md).  
 4. **Conversation / prep intelligence** (elite paths) [`conversation-intelligence-prep.md`](conversation-intelligence-prep.md); system view [`intelligence-system-design.md`](intelligence-system-design.md).  
-5. **Distinctive UX** (“superpower x safety harness”) aligned with [`messaging-unaware-learners.md`](messaging-unaware-learners.md)—not beige SCORM clones.
+5. **Distinctive UX** (“superpower x safety harness”) aligned with [`messaging-unaware-learners.md`](messaging-unaware-learners.md)—not beige SCORM clones.  
+6. **Motivation layer** — nickname, optional **play persona**, badges, opt‑in **safe** leaderboards, squads — [`gamification-rewards-and-identity.md`](gamification-rewards-and-identity.md).  
+7. **Idea portfolio studio** — post‑foundation: **1 small · several medium · 1 large** + effort budgeting — [`idea-portfolio-ladder.md`](idea-portfolio-ladder.md), [`templates/idea-portfolio-template.md`](../templates/idea-portfolio-template.md).
 
 ## Platform capabilities (release-ordered sketch)
 
@@ -34,11 +36,15 @@ Experts feel a **coding-AI superpower** early; without **structure, jurisdiction
 - Artefact submission (problem brief → capstone)  
 - Mentor rubric UI mirroring **`capstone-checklist`**; pass/partial/requires revision  
 - Baseline learner profile persisted (intake fields)  
+- Learner **nickname** + optional **play persona**; moderation primitives — [`gamification-rewards-and-identity.md`](gamification-rewards-and-identity.md)  
+- Guided **idea portfolio** worksheet surfaced (may start read‑only templates → in‑app save) — [`idea-portfolio-ladder.md`](idea-portfolio-ladder.md)
 
 ### V1 (+ intelligence wedge)
 
 - Part 2 question generation flow (guarded prompts; human QA step for elite tier)  
 - Prep brief artefacts linked per learner/event  
+- Badge grants + optional **opt‑in / squad leaderboards** (verification‑oriented metrics only) — [`gamification-rewards-and-identity.md`](gamification-rewards-and-identity.md)  
+- Portfolio **commit gates** tied to formative progress (unlock L1 planning after S1 shipped) — [`idea-portfolio-ladder.md`](idea-portfolio-ladder.md)  
 - Lightweight analytics (time on task optional; privacy-first defaults)  
 
 ### V2 (+ enterprise)
@@ -59,10 +65,12 @@ Keep **canonical pedagogy + rubrics in Git** (reviewable PRs); platform **render
 |----------|-----|
 | General-purpose LMS parity | Narrow wins on SME+AI use case |
 | Legal advice embedded in UX | Orientation + escalate to counsel only |
-| Public leaderboards driven by codegen speed | Teaches reckless behaviour |
+| Forced public leaderboards on **unsafe metrics** | See [`gamification-rewards-and-identity.md`](gamification-rewards-and-identity.md) — opt‑in + verification‑first |
 
 ## Links
 
 - Messaging & arcs: [`product-shape.md`](product-shape.md), [`messaging-unaware-learners.md`](messaging-unaware-learners.md)  
 - Pedagogy/scoring/visuals: [`lms-assessment-and-experience.md`](lms-assessment-and-experience.md)  
+- Gamification & identity: [`gamification-rewards-and-identity.md`](gamification-rewards-and-identity.md)  
+- Idea portfolio: [`idea-portfolio-ladder.md`](idea-portfolio-ladder.md)  
 - Domains corpus: [`domains.md`](domains.md)

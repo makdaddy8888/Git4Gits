@@ -9,7 +9,9 @@ Git4Gits **is** building a **learning platform** (see [`platform-product-vision.
 | **Visually impactful** — feels premium, not “wiki homework” | **Pedagogically sound** — clarity, practice, feedback, authentic tasks |
 | **Observable scoring** — sponsors trust outcomes | **Low shame** — avoid surveillance vibes and leaderboard harm |
 
-Git4Gits should **ship** these as **product surfaces** (learner app, facilitator console), not only PDFs—while **renting** commodity infrastructure (auth, email, video, DB).
+## Safe gamification note
+
+If the product adds **leaderboards or points**, follow [`gamification-rewards-and-identity.md`](gamification-rewards-and-identity.md)—reward **verification & completion**, not naive **speed** of AI output. Early cohort archetypes in [`learner-personas-and-facilitation.md`](learner-personas-and-facilitation.md) flagged pure leaderboards as risky; **opt‑in squad boards** mitigate that.
 
 ---
 
