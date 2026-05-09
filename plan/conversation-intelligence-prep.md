@@ -31,6 +31,8 @@ Agents help you **assemble context and drafts**—**humans approve** wording so 
 
 **Elite cohort rule:** Prefer **scheduled prep** (“we send you a sharp agenda **Tuesday** after we run internal prep”) over **instant** chat—“wait while agents run” pressures you to ship unvetted fluff.
 
+**Pre-loaded reference (reuse; don’t re-research toolchain basics):** For **expert coders / GitHub power users** who mainly need packaging and GTM sharpened—not Git 101—load [`knowledge-reference-github-development-and-gtm-for-technical-experts.md`](knowledge-reference-github-development-and-gtm-for-technical-experts.md).
+
 ---
 
 ## User-facing wording (professional, accurate)

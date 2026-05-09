@@ -4,27 +4,49 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Git4Gits — terminal welcome</title>
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="bezel">
+    <p class="wordmark" aria-label="Git 4 Gits">
+      <span class="wordmark-w">GIT</span>
+      <span class="wordmark-sep" aria-hidden="true"> </span>
+      <span class="wordmark-num">4</span>
+      <span class="wordmark-sep" aria-hidden="true"> </span>
+      <span class="wordmark-w">GITS</span>
+    </p>
     <div class="crt">
-      <div class="crt-glow"></div>
-      <div class="crt-scanlines" aria-hidden="true"></div>
-      <header class="status-bar">
-        <span class="blink">*</span> NODE ONLINE
-        <span class="mono-dim">|</span> BUILD 0001
+      <header class="status-bar crt-chrome">
+        <span class="blink">*</span> LAB ONLINE
+        <span class="mono-dim">|</span> <span id="session-line">PREVIEW · LOGGED IN</span>
+        <span class="mono-dim">|</span> <span id="screen-line">MAIN MENU</span>
         <span class="mono-dim">|</span> <span id="clock">--:--:--</span>
       </header>
-      <main>
-        <pre id="bbs" aria-label="BBS welcome screen">Loading MATRIX...</pre>
+      <main id="crt-main" class="crt-chrome">
+        <nav id="main-nav" class="main-nav" aria-label="Main terminal menu"></nav>
+        <p id="kbd-hint" class="kbd-hint mono-dim" hidden></p>
+        <div id="main-pane">
+          <div id="flow-panel" class="flow-panel" hidden></div>
+          <p id="home-hint" class="home-hint mono-dim"></p>
+          <pre id="bbs" class="welcome-bbs" hidden aria-label="Git4gits ASCII welcome bulletin">__GIT4GITS_WELCOME_PLACEHOLDER__</pre>
+        </div>
       </main>
-      <footer class="hud">
+      <footer class="hud crt-chrome">
         <button type="button" id="toggle-phosphor" class="hud-btn">toggle P31 / amber</button>
         <button type="button" id="toggle-scan" class="hud-btn">toggle scanlines</button>
+        <button type="button" id="toggle-8bit" class="hud-btn">toggle 8-bit mode</button>
       </footer>
+      <div class="crt-glow" aria-hidden="true"></div>
+      <div class="crt-scanlines" aria-hidden="true"></div>
     </div>
   </div>
-  <script type="module" src="/app.js"></script>
+  <!-- Relative URLs so file:// preview still loads app.js (+ works under a sub-path) -->
+  <script type="module" src="app.js"></script>
 </body>
 </html>

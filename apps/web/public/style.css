@@ -6,7 +6,7 @@
   --bg-crt: #070707;
 }
 
-body.theme-amber {
+html.theme-amber {
   --phosphor: #ffb000;
   --phosphor-dim: #7a4700;
   --glass: rgba(255, 176, 0, 0.06);
@@ -40,6 +40,46 @@ body {
   padding: 1.5rem 1rem 2rem;
 }
 
+/* Spelled-out wordmark above the CRT */
+.wordmark {
+  margin: 0 0 0.85rem;
+  text-align: center;
+  font-size: clamp(0.95rem, 3.2vw, 1.4rem);
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--phosphor);
+  text-shadow:
+    0 0 6px rgba(57, 255, 57, 0.4),
+    0 0 20px rgba(57, 255, 57, 0.12);
+}
+
+.wordmark-num {
+  color: var(--phosphor);
+  opacity: 0.95;
+  font-weight: 700;
+  padding: 0 0.06em;
+  text-shadow:
+    0 0 8px rgba(57, 255, 57, 0.55),
+    0 0 24px rgba(57, 255, 57, 0.2);
+}
+
+.wordmark-w {
+  color: var(--phosphor);
+}
+
+html.theme-amber .wordmark {
+  text-shadow:
+    0 0 6px rgba(255, 176, 0, 0.45),
+    0 0 22px rgba(255, 176, 0, 0.18);
+}
+
+html.theme-amber .wordmark-num {
+  text-shadow:
+    0 0 10px rgba(255, 176, 0, 0.55),
+    0 0 26px rgba(255, 176, 0, 0.22);
+}
+
 .crt {
   position: relative;
   border: 3px solid #2a2a2a;
@@ -52,17 +92,28 @@ body {
   background: var(--bg-crt);
 }
 
+/* Header / main / footer sit above glow + scanlines (overlays are last in DOM). */
+.crt-chrome {
+  position: relative;
+  z-index: 10;
+}
+
+.hud.crt-chrome {
+  z-index: 12;
+}
+
 .crt-glow {
   pointer-events: none;
   position: absolute;
   inset: 6px;
   border-radius: 3px;
+  z-index: 0;
   box-shadow:
     inset 0 0 40px rgba(57, 255, 57, 0.04),
     inset 0 0 120px rgba(0, 0, 0, 0.5);
 }
 
-body.theme-amber .crt-glow {
+html.theme-amber .crt-glow {
   box-shadow:
     inset 0 0 40px rgba(255, 176, 0, 0.06),
     inset 0 0 120px rgba(0, 0, 0, 0.5);
@@ -80,21 +131,21 @@ body.theme-amber .crt-glow {
   z-index: 2;
 }
 
-body.no-scan .crt-scanlines::before {
+html.no-scan .crt-scanlines::before {
   display: none;
 }
 
 .crt-scanlines {
   position: absolute;
   inset: 0;
-  z-index: 2;
+  z-index: 1;
   pointer-events: none;
   border-radius: 3px;
 }
 
 .status-bar {
   position: relative;
-  z-index: 3;
+  z-index: 1;
   font-size: 0.7rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -106,7 +157,7 @@ body.no-scan .crt-scanlines::before {
     0 0 14px rgba(57, 255, 57, 0.15);
 }
 
-body.theme-amber .status-bar {
+html.theme-amber .status-bar {
   text-shadow:
     0 0 4px var(--phosphor),
     0 0 14px rgba(255, 176, 0, 0.2);
@@ -126,11 +177,193 @@ body.theme-amber .status-bar {
   color: var(--phosphor-dim);
 }
 
-main {
+#crt-main {
   position: relative;
-  z-index: 3;
+  z-index: 1;
   padding: 0.5rem 0.65rem 0.75rem;
   overflow-x: auto;
+}
+
+.main-nav {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: -0.15rem -0.2rem 0.45rem -0.2rem;
+  padding: 0.35rem 0.25rem 0.5rem;
+  background: var(--bg-crt);
+  border-bottom: 1px dashed var(--phosphor-dim);
+}
+
+.menu-line {
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  font: inherit;
+  font-size: max(13px, 0.8125rem);
+  line-height: 1.4;
+  min-height: 2.75rem;
+  text-align: left;
+  color: var(--phosphor);
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid var(--phosphor-dim);
+  padding: 0.45rem 0.65rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.menu-line:hover,
+.menu-line:focus-visible {
+  border-color: var(--phosphor);
+}
+
+.menu-line:focus-visible {
+  outline: 2px solid var(--phosphor);
+  outline-offset: 1px;
+}
+
+.menu-hotkey {
+  display: inline-block;
+  min-width: 3.75ch;
+  margin-right: 0.65ch;
+  color: var(--phosphor-dim);
+  letter-spacing: 0.06em;
+}
+
+.menu-title-row {
+  font-size: max(12px, 0.8rem);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.35rem;
+  margin: 0 0 0.15rem;
+  color: var(--phosphor);
+}
+
+.kbd-hint {
+  font-size: max(11px, 0.74rem);
+  letter-spacing: 0.04em;
+  margin: 0 0 0.4rem;
+  padding: 0 0.15rem;
+}
+
+.home-hint {
+  font-size: max(13px, 0.8125rem);
+  line-height: 1.45;
+  margin: 0 0 0.5rem;
+  white-space: pre-wrap;
+}
+
+#main-pane > .welcome-bbs:not([hidden]) {
+  max-height: min(62vh, 28rem);
+  overflow: auto;
+}
+
+.flow-panel {
+  font-size: clamp(11px, 1.85vw, 13px);
+  line-height: 1.4;
+}
+
+.flow-panel:not([hidden]) {
+  animation: flowFadeIn 0.14s ease-out;
+}
+
+@keyframes flowFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.flow-intro,
+.flow-plan-out {
+  color: var(--phosphor);
+  margin: 0 0 0.85rem;
+  white-space: pre-wrap;
+}
+
+.flow-step-title {
+  font-size: 0.68rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  margin: 0 0 0.35rem;
+  color: var(--phosphor-dim);
+}
+
+.flow-q-text {
+  margin: 0 0 0.45rem;
+  color: var(--phosphor);
+}
+
+.flow-field-label {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--phosphor-dim);
+  margin-bottom: 0.22rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.flow-field {
+  width: 100%;
+  min-height: 6.5rem;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.35;
+  padding: 0.45rem 0.5rem;
+  color: var(--phosphor);
+  background: rgba(0, 0, 0, 0.65);
+  border: 1px solid var(--phosphor-dim);
+  resize: vertical;
+}
+
+.flow-field:focus {
+  outline: 2px solid var(--phosphor);
+  outline-offset: 2px;
+  border-color: var(--phosphor);
+}
+
+.flow-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.65rem;
+  align-items: center;
+}
+
+.flow-btn {
+  font: inherit;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.35rem 0.65rem;
+  cursor: pointer;
+  color: var(--phosphor-dim);
+  background: transparent;
+  border: 1px solid var(--phosphor-dim);
+  border-radius: 2px;
+}
+
+.flow-btn.primary {
+  color: var(--phosphor);
+  border-color: var(--phosphor);
+}
+
+.flow-btn:hover,
+.flow-btn:focus-visible {
+  color: var(--phosphor);
+  border-color: var(--phosphor);
+}
+
+.flow-steps {
+  font-size: 0.72rem;
+  color: var(--phosphor-dim);
+  margin-left: auto;
 }
 
 #bbs {
@@ -145,7 +378,7 @@ main {
   letter-spacing: 0.015em;
 }
 
-body.theme-amber #bbs {
+html.theme-amber #bbs {
   text-shadow:
     0 0 5px rgba(255, 176, 0, 0.5),
     0 0 16px rgba(255, 176, 0, 0.15);
@@ -153,15 +386,18 @@ body.theme-amber #bbs {
 
 .hud {
   position: relative;
-  z-index: 3;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   padding: 0.5rem 0.65rem;
   border-top: 1px dashed var(--phosphor-dim);
+  pointer-events: auto;
 }
 
 .hud-btn {
+  position: relative;
+  z-index: 1;
   font: inherit;
   font-size: 0.72rem;
   text-transform: uppercase;
@@ -172,6 +408,7 @@ body.theme-amber #bbs {
   border: 1px solid var(--phosphor-dim);
   border-radius: 2px;
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .hud-btn:hover {
@@ -182,7 +419,7 @@ body.theme-amber #bbs {
     inset 0 0 8px rgba(57, 255, 57, 0.05);
 }
 
-body.theme-amber .hud-btn:hover {
+html.theme-amber .hud-btn:hover {
   box-shadow:
     0 0 6px rgba(255, 176, 0, 0.3),
     inset 0 0 8px rgba(255, 176, 0, 0.06);
@@ -191,4 +428,174 @@ body.theme-amber .hud-btn:hover {
 .hud-btn:focus-visible {
   outline: 2px solid var(--phosphor);
   outline-offset: 2px;
+}
+
+/* ---------------------------------------------------------------------------
+   8-bit mode — chunky UI, DOS-style raster font (VT323), hard-edged shadows.
+   Stacks with html.theme-amber (phosphor palette) + html.no-scan.
+   --------------------------------------------------------------------------- */
+
+html.theme-8bit body {
+  font-family: "VT323", ui-monospace, monospace;
+  font-size: 20px;
+  line-height: 1.35;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+}
+
+html.theme-8bit,
+html.theme-8bit body {
+  background: #34346e;
+  background-image: repeating-linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02) 0 2px,
+    transparent 2px 4px
+  );
+}
+
+html.theme-8bit .wordmark {
+  font-weight: 400;
+  font-size: clamp(1.4rem, 5vw, 2.05rem);
+  letter-spacing: 0.06em;
+  text-shadow:
+    2px 2px 0 #0a0820,
+    3px 3px 0 var(--phosphor-dim);
+}
+
+html.theme-8bit.theme-amber .wordmark {
+  text-shadow:
+    2px 2px 0 #1a0a00,
+    3px 3px 0 var(--phosphor-dim);
+}
+
+html.theme-8bit .wordmark-num {
+  text-shadow:
+    2px 2px 0 #0a0820,
+    1px -1px 0 var(--phosphor-dim);
+}
+
+html.theme-8bit.theme-amber .wordmark-num {
+  text-shadow:
+    2px 2px 0 #1a0a00,
+    1px -1px 0 var(--phosphor-dim);
+}
+
+html.theme-8bit .crt {
+  border-radius: 0;
+  border: 4px solid #1e1e3a;
+  padding: 0;
+  box-shadow:
+    inset 4px 4px 0 rgba(212, 220, 255, 0.08),
+    inset -4px -4px 0 rgba(0, 0, 0, 0.65),
+    6px 6px 0 #000,
+    8px 8px 0 var(--phosphor-dim);
+  background: #0c0c18;
+}
+
+html.theme-8bit .crt-glow {
+  display: none;
+}
+
+html.theme-8bit .crt-scanlines {
+  border-radius: 0;
+}
+
+html.theme-8bit .crt-scanlines::before {
+  background: repeating-linear-gradient(
+    transparent 0 4px,
+    rgba(0, 0, 0, 0.38) 4px 5px
+  );
+}
+
+html.theme-8bit .status-bar {
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  padding: 0.4rem 0.6rem;
+  border-bottom: 3px solid var(--phosphor-dim);
+  text-shadow:
+    2px 2px 0 #050510,
+    -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+html.theme-8bit.theme-amber .status-bar {
+  text-shadow:
+    2px 2px 0 #120800,
+    -1px -1px 0 rgba(0, 0, 0, 0.45);
+}
+
+html.theme-8bit .menu-line {
+  border-radius: 0;
+  min-height: 3rem;
+  font-size: 1.125rem;
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--phosphor) var(--phosphor-dim) var(--phosphor-dim)
+    var(--phosphor);
+  background: #16162a;
+}
+
+html.theme-8bit .menu-title-row {
+  font-size: 1.05rem;
+}
+
+html.theme-8bit #crt-main {
+  padding: 0.45rem 0.6rem 0.6rem;
+}
+
+html.theme-8bit #bbs {
+  font-size: clamp(14px, 2.4vw, 19px);
+  line-height: 1.38;
+  letter-spacing: 0.02em;
+  text-shadow:
+    2px 2px 0 #060610,
+    1px -1px 0 var(--phosphor-dim);
+}
+
+html.theme-8bit.theme-amber #bbs {
+  text-shadow:
+    2px 2px 0 #100800,
+    1px -1px 0 var(--phosphor-dim);
+}
+
+html.theme-8bit .hud {
+  gap: 0.55rem;
+  padding: 0.45rem 0.6rem;
+  border-top: 3px solid var(--phosphor-dim);
+}
+
+html.theme-8bit .hud-btn {
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 0;
+  letter-spacing: 0.03em;
+  padding: 0.3rem 0.65rem;
+  border-width: 3px;
+  border-style: solid;
+  border-color: var(--phosphor) var(--phosphor-dim) var(--phosphor-dim)
+    var(--phosphor);
+  background: #16162a;
+}
+
+html.theme-8bit .hud-btn:hover {
+  background: #1f1f3e;
+  box-shadow:
+    2px 2px 0 #000,
+    inset 2px 2px 0 rgba(255, 255, 255, 0.06);
+}
+
+html.theme-8bit.theme-amber .hud-btn:hover {
+  box-shadow:
+    2px 2px 0 #000,
+    inset 2px 2px 0 rgba(255, 220, 120, 0.08);
+}
+
+html.theme-8bit .hud-btn:active {
+  border-color: var(--phosphor-dim) var(--phosphor) var(--phosphor)
+    var(--phosphor-dim);
+  transform: translate(1px, 1px);
+}
+
+html.theme-8bit .hud-btn:focus-visible {
+  outline-offset: 3px;
 }
