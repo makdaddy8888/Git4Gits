@@ -1,0 +1,31 @@
+# Pilot — Week 1 checklist
+
+Facilitator: _________________ Dates: _________________
+
+## Before session
+
+- [ ] Charter one-liner and outcome agreed with sponsor (`charter-v0.md`).
+- [ ] **Synthetic dataset** or **sanitized excerpt** packaged; forbidden data types documented verbally.
+- [ ] Tool allowlist communicated (even if broad: “IDE agent X + Python 3.Y”).
+
+## Session 01 (90 min): “Brief before code”
+
+- [ ] **5 min**: Non-goals, forbidden failure, how to escalate to eng buddy.
+- [ ] **20 min**: Walk through [`templates/problem-brief-template.md`](../templates/problem-brief-template.md) on facilitator example task.
+- [ ] **35 min breakout**: Small groups pairs complete brief for assigned **toy-but-real-shaped** problem (tabular).
+- [ ] **20 min**: Read-back; facilitator flags vague acceptance criteria.
+- [ ] **10 min**: Homework — finish brief individually for **their** micro-task candidate.
+
+Homework (~2 hrs): finalize brief + list **three ways** the AI could be wrong.
+
+## Logistics
+
+Volunteers recruited: _____ / Target 6–12
+
+Eng buddy RSVP: _____
+
+Session notes file: `plan/notes/session-01.md` (create during session)
+
+## Stop conditions
+
+If **<3** learners can state acceptance criteria in plain English, **repeat session 01** with a simpler task — do not advance to codegen-heavy session.
