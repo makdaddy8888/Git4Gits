@@ -2,6 +2,8 @@
 
 These are **provisional decisions** chosen so work can begin. Revisit after **Week 3** of pilot (or sooner if sponsor goals conflict).
 
+**Unsure platform vs Copilot vs “ideas catcher”?** Read [`product-shape.md`](product-shape.md)—they stack: **ideas + facilitation kit first**, optional **Copilot track**, **platform last** only if recurring pain demands it.
+
 ## Decisions locked for v0
 
 | Topic | Decision | Why |
