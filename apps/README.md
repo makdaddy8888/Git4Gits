@@ -2,11 +2,11 @@
 
 Learning platform implementations (web app, APIs) can live **here** or in a sibling repository keyed to **[`plan/platform-product-vision.md`](../plan/platform-product-vision.md)**.
 
-## BBS-style welcome (ASCII)
+## Git4Gits ASCII welcome (retro BBS style)
 
-Retro terminal splash for demos or first paint in the app shell:
+Terminal-style splash—the **product name is Git4Gits**; “BBS” only describes the nostalgic layout.
 
-- [`welcome-bbs.txt`](welcome-bbs.txt) — `cat welcome-bbs.txt` in a monospace terminal (80 cols ideal).
+- [`git4gits-welcome.txt`](git4gits-welcome.txt) — raw text: `cat git4gits-welcome.txt` (monospace, ~80 cols).
 
 ## Browser preview (Node, zero dependencies)
 

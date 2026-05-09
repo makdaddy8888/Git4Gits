@@ -8,7 +8,7 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PUBLIC = path.join(__dirname, "public");
-const WELCOME_TXT = path.join(__dirname, "..", "welcome-bbs.txt");
+const WELCOME_TXT = path.join(__dirname, "..", "git4gits-welcome.txt");
 const PORT = Number(process.env.PORT) || 3847;
 
 const MIME = {
@@ -29,10 +29,10 @@ const server = http.createServer((req, res) => {
   const url = new URL(req.url || "/", `http://127.0.0.1`);
   let p = url.pathname;
 
-  if (p === "/welcome-bbs.txt") {
+  if (p === "/git4gits-welcome.txt") {
     return fs.readFile(WELCOME_TXT, "utf8", (err, data) => {
       if (err) {
-        send(res, 500, "text/plain", "Could not read welcome-bbs.txt\n");
+        send(res, 500, "text/plain", "Could not read git4gits-welcome.txt\n");
         return;
       }
       send(res, 200, MIME[".txt"], data);
