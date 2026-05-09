@@ -74,3 +74,4 @@ Git4Gits is a **facilitation system and idea pipeline** that helps organizations
 - Jurisdiction desk workflow + precedent/law framing: [`compliance-research-agent.md`](compliance-research-agent.md)
 - Learner psychology + facilitation cues: [`learner-personas-and-facilitation.md`](learner-personas-and-facilitation.md)
 - Per-learner 1:1 (domain, industry, country, passion): [`learner-intake-interview.md`](learner-intake-interview.md)
+- High-stakes conversational prep (agents → brief → sharp questions): [`conversation-intelligence-prep.md`](conversation-intelligence-prep.md)

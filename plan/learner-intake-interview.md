@@ -2,7 +2,9 @@
 
 **Audience:** each **enrolled** SME, 1:1 with facilitator (or TA). **Not** the same as market [`interview-script.md`](interview-script.md)—that one screens demand; this one **designs the capstone around the human**.
 
-**Budget:** **35–45 minutes** (calendar 50).  
+**Elite respondents** (partner, GC, EVP, distinguished engineer, founder): run **async prep first** via [`conversation-intelligence-prep.md`](conversation-intelligence-prep.md)—then shorten the live intake.
+
+**Budget:** **35–45 minutes** (calendar 50); elite track often **25–35 min** live if prep brief already exists.  
 **Goal:** map **where their domain authority lives**, **industry + jurisdiction**, and **what fires them up**—so practice work uses *their* vocabulary and motivation, and compliance hooks to the right [`jurisdiction-profile-template.md`](../templates/jurisdiction-profile-template.md).
 
 **Output:** completed [`templates/learner-profile-template.md`](../templates/learner-profile-template.md) saved as e.g. `plan/learners/<anonymous-slug>.md` (see [`plan/learners/README.md`](learners/README.md) for PII guardrails).
