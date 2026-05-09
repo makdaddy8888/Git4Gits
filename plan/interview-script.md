@@ -16,8 +16,10 @@ Consent: Explain notes may inform program design; anonymize quotes unless they a
 
 ## Environment (8 min)
 
+- **Country / state** where employment contract and **data-protection law** primarily sit? (Rough answer OK—drives compliance research.)
 - What tools does IT allow today (Excel, Jupyter, IDE, SaaS connectors)?
 - Any **datasets** that are inherently off limits for pilots?
+- **Cross-border SaaS**: does work data leave that country when you use vendor AI?
 
 ## Close (5 min)
 
@@ -27,4 +29,4 @@ Consent: Explain notes may inform program design; anonymize quotes unless they a
 
 ## Interview log (copy per person)
 
-| Date | Role | Uses AI coding? Y/N | Blocker themes | Interested in pilot Y/M/N |
+| Date | Role | Country / region (rough) | Uses AI coding? Y/N | Blocker themes | Interested in pilot Y/M/N |

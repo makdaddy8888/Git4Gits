@@ -5,6 +5,7 @@ Facilitator: _________________ Dates: _________________
 ## Before session
 
 - [ ] Charter one-liner and outcome agreed with sponsor (`charter-v0.md`).
+- [ ] **Jurisdiction row** filled in charter; if non-trivial, complete [`templates/jurisdiction-profile-template.md`](../templates/jurisdiction-profile-template.md) and run or assign [`plan/compliance-research-agent.md`](../plan/compliance-research-agent.md) (or sponsor attests documented low-risk carve-out).
 - [ ] **Synthetic dataset** or **sanitized excerpt** packaged; forbidden data types documented verbally.
 - [ ] Tool allowlist communicated (even if broad: “IDE agent X + Python 3.Y”).
 

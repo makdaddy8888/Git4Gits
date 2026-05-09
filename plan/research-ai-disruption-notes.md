@@ -11,6 +11,7 @@ Last updated: 2026-05-09.
 | **Disruption (macro)** | Occupations or industries where AI changes task mix, headcount growth, or skill requirements—per employers and researchers. |
 | **Git4Gits fit** | Domain experts who **gain leverage** from **specification, small-code artifacts, and verification** with AI assistants—not only chat. |
 | **Pilot-ready** | You can run **Week 1** with **synthetic or policy-safe** data without months of legal review. |
+| **Jurisdiction-aware** | “Pilot-ready” is **never** geography-agnostic: country + sector + data type drive **privacy, workplace, AI, IP** overlays—capture in [`templates/jurisdiction-profile-template.md`](../templates/jurisdiction-profile-template.md) and **`plan/legal-packs/`** when warranted. |
 
 ## What serious sources agree on (high level)
 
@@ -30,7 +31,7 @@ Doing “**all domains**” in **discovery** means: capture patterns across sect
 
 Suggested cadence:
 
-1. Maintain **one global cohort playbook** (`templates/` + [`pilot-week-1-checklist.md`](pilot-week-1-checklist.md)).
+1. Maintain **one global cohort playbook** (`templates/` + [`pilot-week-1-checklist.md`](pilot-week-1-checklist.md)); **stamp jurisdiction early** (`jurisdiction-profile-template.md`, optional `plan/legal-packs/` via [`compliance-research-agent.md`](compliance-research-agent.md)).
 2. For each vertical, keep **pitfalls + data rules + example tasks** in [`domains.md`](domains.md).
 3. Promote proven exercises into `plan/ideas/` (status **adopted**) then selectively into reusable **pattern** docs later.
 
@@ -49,3 +50,5 @@ Suggested cadence:
 
 - Vertical cheat sheet + interview angles: [`domains.md`](domains.md)
 - Product ladder (ideas catcher → Copilot track → platform): [`product-shape.md`](product-shape.md)
+- Country/sector legal desk research (structured agent brief + **not legal advice**): [`compliance-research-agent.md`](compliance-research-agent.md)
+- Cohort jurisdiction snapshot: [`../templates/jurisdiction-profile-template.md`](../templates/jurisdiction-profile-template.md)

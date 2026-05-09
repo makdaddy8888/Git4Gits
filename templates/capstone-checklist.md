@@ -6,6 +6,7 @@ Pass = all **required** items satisfied or documented exception approved by ment
 ## Specification
 
 - [ ] **Required**: Problem [`problem-brief-template.md`](problem-brief-template.md) complete; acceptance criteria are testable sentences.
+- [ ] **Required**: **Jurisdiction** row in brief filled (country + sub-jurisdiction if relevant) or covered in attached [`jurisdiction-profile-template.md`](jurisdiction-profile-template.md).
 - [ ] **Required**: Out-of-scope and “definition of wrong” filled (not blank).
 
 ## Implementation
@@ -21,7 +22,8 @@ Pass = all **required** items satisfied or documented exception approved by ment
 ## Safety & stewardship
 
 - [ ] **Required**: No secrets (`API_KEY`, passwords, PEMs) embedded in prompts or repo; use env or stubs.
-- [ ] **Required**: Data handling aligns with **`charter-v0` forbidden failure** clause.
+- [ ] **Required**: Data handling aligns with **`charter-v0` forbidden failure** clause and **declared jurisdiction** (no “convenient unknown” on country).
+- [ ] **Required**: If `plan/legal-packs/` contains a desk pack for this cohort, **red-flag section** either empty or **counsel-approved** exception documented.
 
 ## Documentation
 

@@ -6,6 +6,18 @@ Complete **before** asking an AI assistant to generate or change code significan
 
 -
 
+## Jurisdiction & governing context
+
+| Field | Details |
+|-------|---------|
+| **Country / primary legal order** | |
+| **State / province (if applies)** | |
+| **Industry regulator (if applies)** | |
+| **Where data resides & may be processed** | |
+| **Cross-border transfers involved?** | Y / N — detail |
+
+*Facilitators: complete [`jurisdiction-profile-template.md`](jurisdiction-profile-template.md) for the cohort if this is non-trivial; run [`plan/compliance-research-agent.md`](../plan/compliance-research-agent.md) when laws may bite.*
+
 ## User / stakeholder
 
 -

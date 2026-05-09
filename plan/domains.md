@@ -12,7 +12,7 @@ Legend:
 
 Related: [`research-ai-disruption-notes.md`](research-ai-disruption-notes.md).
 
----
+**Legal order:** Ethics notes here assume **baseline prudence** only. Country and sub-jurisdiction still control—fill [`templates/jurisdiction-profile-template.md`](../templates/jurisdiction-profile-template.md) and optionally run [`compliance-research-agent.md`](compliance-research-agent.md) **before** treating any row as authoritative.
 
 ## 1. Cross-cutting — analytics, FP&A-adjacent, “office SMEs” everywhere
 

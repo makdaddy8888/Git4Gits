@@ -6,7 +6,7 @@ These are **provisional decisions** chosen so work can begin. Revisit after **We
 
 **Many industries at once:** use [`domains.md`](domains.md) for the full vertical map and [`research-ai-disruption-notes.md`](research-ai-disruption-notes.md) for evidence. **Discovery** should **rotate interviews** across sectors; **pilots** still run one reusable playbook with sponsor-specific data rules.
 
-## Decisions locked for v0
+**Country & law:** Obligations change by **country/sub-jurisdiction**, sector, **data type**, and vendor routing. Capture who the cohort is for (`charter-v0` + [`templates/jurisdiction-profile-template.md`](../templates/jurisdiction-profile-template.md)); use [`compliance-research-agent.md`](compliance-research-agent.md) to **structure** AI-led desk research and store packs under `plan/legal-packs/`—then get **human counsel** wherever red flags say so (**not legal advice**).
 
 | Topic | Decision | Why |
 |-------|----------|-----|
@@ -18,7 +18,7 @@ These are **provisional decisions** chosen so work can begin. Revisit after **We
 
 ## This week (do in order)
 
-1. **Fill** [`charter-v0.md`](charter-v0.md) blanks (15 min).
+1. **Fill** [`charter-v0.md`](charter-v0.md) blanks (15 min)—include **jurisdiction** table when not trivially single-country textbook lab.
 2. **Book** ≥5 SME chats using [`interview-script.md`](interview-script.md).
 3. **Schedule** one `pilot-session-01` slot with 3 volunteers (see checklist).
 4. **Optional**: invite **one eng buddy** to observe session 01 and sanity-check realism.

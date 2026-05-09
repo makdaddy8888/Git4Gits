@@ -35,6 +35,17 @@ We refuse to teach practices that **[e.g. put production secrets in prompts / sk
 | Time to first runnable artifact | Self-report timestamp |
 | Learner confidence (self) | Pre/post 1–5 |
 
+## Jurisdiction (required before first pilot session)
+
+| Field | Value |
+|-------|-------|
+| **Primary country** | |
+| **Sub-jurisdiction** | |
+| **Research pack path** | `plan/legal-packs/____________.md` (or “not yet run”) |
+| **Counsel review** | Y / N / N/A — name: |
+
+Desk research workflow + agent prompt live in [`compliance-research-agent.md`](compliance-research-agent.md). Snapshot who the law is for via [`templates/jurisdiction-profile-template.md`](../templates/jurisdiction-profile-template.md).
+
 ## Constraints
 
 -
