@@ -72,3 +72,4 @@ Git4Gits is a **facilitation system and idea pipeline** that helps organizations
 - Vertical coverage + fit stars: [`domains.md`](domains.md)
 - Research sources + ranking caveats: [`research-ai-disruption-notes.md`](research-ai-disruption-notes.md)
 - Jurisdiction desk workflow + precedent/law framing: [`compliance-research-agent.md`](compliance-research-agent.md)
+- Learner psychology + facilitation cues: [`learner-personas-and-facilitation.md`](learner-personas-and-facilitation.md)

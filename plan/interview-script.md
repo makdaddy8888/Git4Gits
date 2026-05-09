@@ -27,6 +27,16 @@ Consent: Explain notes may inform program design; anonymize quotes unless they a
 - Who would need to **approve your time**?
 - Referral: two colleagues in a similar bind.
 
+## Participant style (optional ~5 min)
+
+Use to understand **how to facilitate**, not to label people. See [`learner-personas-and-facilitation.md`](learner-personas-and-facilitation.md).
+
+- Learning in public: energizing or draining? (1–5 or words)
+- When stuck, do you prefer **solo struggle**, **pair**, or **instructor demo**?
+- Boss pressure: **exploratory** vs **must show a win**—where are you?
+- Biggest fear about AI + code at work: wrong output, looking dumb, job security, compliance, something else?
+- What past course or training **worked** for you—and one that **failed**?
+
 ## Interview log (copy per person)
 
-| Date | Role | Country / region (rough) | Uses AI coding? Y/N | Blocker themes | Interested in pilot Y/M/N |
+| Date | Role | Country / region (rough) | Uses AI coding? Y/N | Participant-style notes (signals, not diagnoses) | Blocker themes | Interested in pilot Y/M/N |

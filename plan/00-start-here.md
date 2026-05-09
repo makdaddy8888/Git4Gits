@@ -8,6 +8,8 @@ These are **provisional decisions** chosen so work can begin. Revisit after **We
 
 **Country & law:** Obligations change by **country/sub-jurisdiction**, sector, **data type**, and vendor routing. Capture who the cohort is for (`charter-v0` + [`templates/jurisdiction-profile-template.md`](../templates/jurisdiction-profile-template.md)); use [`compliance-research-agent.md`](compliance-research-agent.md) to **structure** AI-led desk research and store packs under `plan/legal-packs/`—then get **human counsel** wherever red flags say so (**not legal advice**).
 
+**Humans in the room:** read [`learner-personas-and-facilitation.md`](learner-personas-and-facilitation.md)—archetypes are **facilitation aids**, not labels; interviews now include optional **participant style** prompts.
+
 | Topic | Decision | Why |
 |-------|----------|-----|
 | **Primary customer** | The **individual SME learner** | Without learner confidence and a first win, nothing else compounds. Managers get a secondary metric (capstone checklist). |

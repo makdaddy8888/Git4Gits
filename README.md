@@ -19,6 +19,7 @@ Education initiative: help **subject matter experts** ship small, verifiable sof
 | `plan/research-ai-disruption-notes.md` | Sources + how to interpret “AI disruption” |
 | `plan/compliance-research-agent.md` | Workflow + prompt spec for jurisdictional desk research (**not legal advice**) |
 | `plan/legal-packs/` | Stored outputs dated by country/industry hypothesis |
+| `plan/learner-personas-and-facilitation.md` | Who shows up / how facilitators scaffold mixed humans |
 | `plan/ideas/` | Captured improvement ideas (use `_template.md`) |
 | `templates/` | Problem brief, capstone checklist, jurisdiction profile |
 
