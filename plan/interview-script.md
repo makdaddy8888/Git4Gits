@@ -2,6 +2,8 @@
 
 Consent: Explain notes may inform program design; anonymize quotes unless they agree otherwise.
 
+**Industry breadth:** peek at [`domains.md`](domains.md) and borrow example tasks from the closest vertical so questions feel grounded.
+
 ## Warm-up (3 min)
 
 - What do you spend time on weekly that feels **mechanically repeatable**?

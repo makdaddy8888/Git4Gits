@@ -4,6 +4,8 @@ These are **provisional decisions** chosen so work can begin. Revisit after **We
 
 **Unsure platform vs Copilot vs “ideas catcher”?** Read [`product-shape.md`](product-shape.md)—they stack: **ideas + facilitation kit first**, optional **Copilot track**, **platform last** only if recurring pain demands it.
 
+**Many industries at once:** use [`domains.md`](domains.md) for the full vertical map and [`research-ai-disruption-notes.md`](research-ai-disruption-notes.md) for evidence. **Discovery** should **rotate interviews** across sectors; **pilots** still run one reusable playbook with sponsor-specific data rules.
+
 ## Decisions locked for v0
 
 | Topic | Decision | Why |

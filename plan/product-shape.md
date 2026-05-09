@@ -66,3 +66,8 @@ Git4Gits is a **facilitation system and idea pipeline** that helps organizations
 
 - In [`charter-v0.md`](charter-v0.md): set **primary outcome** = “ideas captured → piloted exercises → repeatable cohort.”
 - Add your first loose idea file: `plan/ideas/example-meaningful-name.md` (copy a heading structure from a note in `plan/notes/`).
+
+## Related repo docs
+
+- Vertical coverage + fit stars: [`domains.md`](domains.md)
+- Research sources + ranking caveats: [`research-ai-disruption-notes.md`](research-ai-disruption-notes.md)
