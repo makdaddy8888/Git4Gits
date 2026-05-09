@@ -6,6 +6,7 @@ Pass = all **required** items satisfied or documented exception approved by ment
 ## Specification
 
 - [ ] **Required**: Problem [`problem-brief-template.md`](problem-brief-template.md) complete; acceptance criteria are testable sentences.
+- [ ] **Recommended**: [`learner-profile-template.md`](learner-profile-template.md) (or internal equivalent) on file—**domain, industry, country, passion** aligned with capstone scope.
 - [ ] **Required**: **Jurisdiction** row in brief filled (country + sub-jurisdiction if relevant) or covered in attached [`jurisdiction-profile-template.md`](jurisdiction-profile-template.md).
 - [ ] **Required**: Out-of-scope and “definition of wrong” filled (not blank).
 

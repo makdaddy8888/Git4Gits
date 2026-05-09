@@ -10,6 +10,8 @@ These are **provisional decisions** chosen so work can begin. Revisit after **We
 
 **Humans in the room:** read [`learner-personas-and-facilitation.md`](learner-personas-and-facilitation.md)—archetypes are **facilitation aids**, not labels; interviews now include optional **participant style** prompts.
 
+**Every enrolled SME:** run **[`learner-intake-interview.md`](learner-intake-interview.md)** (1:1) before Week 1 live—captures **domain authority**, **industry**, **country/region**, and **passion** into [`templates/learner-profile-template.md`](../templates/learner-profile-template.md) → `plan/learners/<slug>.md`. This is separate from market [`interview-script.md`](interview-script.md).
+
 **Outreach narrative:** [`messaging-unaware-learners.md`](messaging-unaware-learners.md)—how to meet leaders/SMEs who feel the **superpower** before they see the need for **structure**.
 
 ## Decisions locked for v0
@@ -25,9 +27,10 @@ These are **provisional decisions** chosen so work can begin. Revisit after **We
 ## This week (do in order)
 
 1. **Fill** [`charter-v0.md`](charter-v0.md) blanks (15 min)—include **jurisdiction** table when not trivially single-country textbook lab.
-2. **Book** ≥5 SME chats using [`interview-script.md`](interview-script.md).
-3. **Schedule** one `pilot-session-01` slot with 3 volunteers (see checklist).
-4. **Optional**: invite **one eng buddy** to observe session 01 and sanity-check realism.
+2. **Book** ≥5 SME chats using [`interview-script.md`](interview-script.md) (market discovery).
+3. When people **enroll**: complete **[`learner-intake-interview.md`](learner-intake-interview.md)** per person and save profiles under [`plan/learners/README.md`](learners/README.md).
+4. **Schedule** one `pilot-session-01` slot with 3 volunteers (see checklist).
+5. **Optional**: invite **one eng buddy** to observe session 01 and sanity-check realism.
 
 ## When to revise defaults
 

@@ -18,6 +18,8 @@ Complete **before** asking an AI assistant to generate or change code significan
 
 *Facilitators: complete [`jurisdiction-profile-template.md`](jurisdiction-profile-template.md) for the cohort if this is non-trivial; run [`plan/compliance-research-agent.md`](../plan/compliance-research-agent.md) when laws may bite.*
 
+*If this capstone came from a cohort intake, cross-check [`learner-profile-template.md`](learner-profile-template.md)—domain jargon, passion, and data red lines.*
+
 ## User / stakeholder
 
 -

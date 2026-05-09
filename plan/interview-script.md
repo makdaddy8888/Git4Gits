@@ -1,3 +1,5 @@
+This document is for **market discovery** (demand, pool, referrals). Once someone **enrolls**, run the 1:1 **[`learner-intake-interview.md`](learner-intake-interview.md)** and save [`../templates/learner-profile-template.md`](../templates/learner-profile-template.md) under `plan/learners/`.
+
 # SME discovery interview (~25–35 min — use **~35 min** if you run both optional blocks)
 
 Consent: Explain notes may inform program design; anonymize quotes unless they agree otherwise.

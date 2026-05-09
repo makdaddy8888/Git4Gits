@@ -7,8 +7,9 @@ Education initiative: help **subject matter experts** ship small, verifiable sof
 1. Open [`plan/00-start-here.md`](plan/00-start-here.md) for locked-in v0 defaults and this week’s actions (and [`plan/product-shape.md`](plan/product-shape.md) when product scope feels fuzzy).
 2. Scan [`plan/domains.md`](plan/domains.md) plus [`plan/research-ai-disruption-notes.md`](plan/research-ai-disruption-notes.md) when choosing interviews or framing pilots.
 3. If learners sit under **meaningful jurisdiction / sector overlay**, run desk research via [`plan/compliance-research-agent.md`](plan/compliance-research-agent.md); pin results in `plan/legal-packs/` — **not legal advice**; escalate to counsel when red flags appear.
-4. Run the **Week 1 checklist** in the same folder.
-5. Use [`templates/problem-brief-template.md`](templates/problem-brief-template.md) before any codegen in teaching or pilot sessions.
+4. For each enrolled SME before Week 1: **[`plan/learner-intake-interview.md`](plan/learner-intake-interview.md)** → profile in [`plan/learners/README.md`](plan/learners/README.md).
+5. Run the **Week 1 checklist** in the same folder.
+6. Use [`templates/problem-brief-template.md`](templates/problem-brief-template.md) before any codegen in teaching or pilot sessions.
 
 ## Repo layout
 
@@ -22,7 +23,8 @@ Education initiative: help **subject matter experts** ship small, verifiable sof
 | `plan/learner-personas-and-facilitation.md` | Who shows up / how facilitators scaffold mixed humans |
 | `plan/messaging-unaware-learners.md` | Pitch + signals for SMEs & leaders who don’t know they need structure yet |
 | `plan/ideas/` | Captured improvement ideas (use `_template.md`) |
-| `templates/` | Problem brief, capstone checklist, jurisdiction profile |
+| `plan/learners/` | One profile Markdown per SME after [`plan/learner-intake-interview.md`](plan/learner-intake-interview.md)—see README for PII |
+| `templates/` | Problem brief, capstone checklist, jurisdiction profile, **`learner-profile-template.md`** |
 
 ## License
 
