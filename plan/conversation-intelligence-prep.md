@@ -123,6 +123,7 @@ Tone: respectful peer speaking to **[seniority]**.
 
 ## Related docs
 
+- **System view** (find + build intelligence, stores, gates): [`intelligence-system-design.md`](intelligence-system-design.md)  
 - Intake anchor: [`learner-intake-interview.md`](learner-intake-interview.md)  
 - Jurisdiction workflows: [`compliance-research-agent.md`](compliance-research-agent.md)  
 - Messaging tone: [`messaging-unaware-learners.md`](messaging-unaware-learners.md)

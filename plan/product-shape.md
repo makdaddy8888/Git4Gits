@@ -75,3 +75,4 @@ Git4Gits is a **facilitation system and idea pipeline** that helps organizations
 - Learner psychology + facilitation cues: [`learner-personas-and-facilitation.md`](learner-personas-and-facilitation.md)
 - Per-learner 1:1 (domain, industry, country, passion): [`learner-intake-interview.md`](learner-intake-interview.md)
 - High-stakes conversational prep (agents → brief → sharp questions): [`conversation-intelligence-prep.md`](conversation-intelligence-prep.md)
+- Finding + building **intelligence** over time (pipeline, stores, roadmap): [`intelligence-system-design.md`](intelligence-system-design.md)

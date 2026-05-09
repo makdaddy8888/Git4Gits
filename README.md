@@ -24,7 +24,8 @@ Education initiative: help **subject matter experts** ship small, verifiable sof
 | `plan/messaging-unaware-learners.md` | Pitch + signals for SMEs & leaders who don’t know they need structure yet |
 | `plan/ideas/` | Captured improvement ideas (use `_template.md`) |
 | `plan/learners/` | One profile Markdown per SME after [`plan/learner-intake-interview.md`](plan/learner-intake-interview.md)—see README for PII |
-| `plan/conversation-intelligence-prep.md` | Async agent prep for high‑stakes 1:1s (Aus law firm partner–class) |
+| `plan/conversation-intelligence-prep.md` | Async agent prep for high‑stakes 1:1s |
+| `plan/intelligence-system-design.md` | Deep design: find + store + synthesize + govern intelligence |
 | `plan/prep-briefs/` | Facilitator briefs keyed to [`templates/facilitator-prep-brief-template.md`](templates/facilitator-prep-brief-template.md) |
 | `templates/` | Problem brief, capstone checklist, jurisdiction profile, learner profile, facilitator prep brief |
 
