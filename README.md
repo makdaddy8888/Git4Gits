@@ -29,6 +29,7 @@ Education initiative: help **subject matter experts** ship small, verifiable sof
 | `plan/prep-briefs/` | Facilitator briefs keyed to [`templates/facilitator-prep-brief-template.md`](templates/facilitator-prep-brief-template.md) |
 | `templates/learner-intake-form.md` | Type‑in Part 1 intake; Part 2 via follow‑up prompt |
 | `plan/learner-intake-two-phase.md` | Why tailored questions come *after* expertise self‑report |
+| `plan/personas/` | Fictional SMEs for demos ([`plan/personas/README.md`](plan/personas/README.md)) |
 | `templates/` | Problem brief, capstone checklist, jurisdiction profile, learner profile, facilitator prep brief |
 
 ## License
